@@ -23,7 +23,8 @@ function App() {
   }
   return (
     <div className="items">
-    <span>Books:</span>
+      <div> 
+      <div><span>Books:</span>
     <button className="addBook" onClick={()=>{countHandle(1)}}>
         +
     </button>
@@ -33,10 +34,13 @@ function App() {
     }}>
         -
     </button>
-    <span className="totalBooks">{countBook}</span>
+    <span className="totalBooks">{countBook}</span></div>
+      </div>
+      
 
-         <br />
-         <span>Pens:</span>
+      <div>
+  
+      <span>Pens:</span>
     <button className="addPen" onClick={()=>{countHandlee(1)}}>
         +
     </button>
@@ -47,7 +51,8 @@ function App() {
         -
     </button>
     <span className="totalPens">{countPen}</span>
-    <br />
+      </div>
+    <div>
     <span>NoteBooks:</span>
     <button className="addNotebook" onClick={()=>{countHandleee(1)}}>
         +
@@ -59,7 +64,9 @@ function App() {
         -
     </button>
     <span className="totalNotebooks">{countNotebook}</span>
-    <br />
+    </div>
+    
+    <div>
     <span>NoteInkPen:</span>
     <button className="addInkpen" onClick={()=>{countHandleeee(1)}}>
         +
@@ -71,6 +78,9 @@ function App() {
         -
     </button>
     <span className="totalInkpens">{countInkpen}</span>
+    </div>
+ 
+   
 
     <div className="total">Total: {countBook+countPen+countNotebook+countInkpen}</div>
    </div>
